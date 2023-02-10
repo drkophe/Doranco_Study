@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********************************/
+/* Position fixed */
+/*********************************/
+
+
+nav {
+    /* border: 3px solid red; */
+    background-color: deepskyblue;
+    padding: 10px;
+    position: fixed; /* Ma nav se fige sur la fenêtre */
+    width: 100%; /* J'ajuste la taille à 100% pour que la nav prenne tout la largeur de son parent*/
+    top: 0; /* Je place ma nav tout au haut de mon document */
+}
+
+h1 {
+    margin-top: 55px;
+}
+
+a {
+    color: white;
+    font-size : 20px;
+    text-decoration: none;
+}
+
+/* La pseudo-classe hover désigne l'état de l'élément lorsqu'il est survolé par la souris */
+/* Traduction : Au survol de ma souris sur mes liens, le texte passe au rouge */
+a:hover {
+    color: red;
+}
+
+/*********************************/
+/* Position sticky */
+/*********************************/
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    position: sticky; /* Positionne l'élément de façon fixe par rapport à son ancêtre de défilement le plus proche */
+    top: 60px;
+    /* bottom: 60px; */
+}
+
+

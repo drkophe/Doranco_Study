@@ -1,0 +1,17 @@
+
+table {
+    border: 3px solid blue;
+    border-collapse: collapse; /* Propriété qui permet de séparer ou fusionner les bordures des cellules */
+    margin: 40px 0;
+}
+th {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid red;
+    text-align: center;
+    padding: 5px;
+}

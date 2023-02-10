@@ -1,0 +1,26 @@
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/forms';
+@import './partials/items';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $main-color;
+}
+
+.main-header__title {
+    color: $base-color-txt;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+

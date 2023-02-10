@@ -1,0 +1,35 @@
+.main-form{
+    width: $width-container;
+    height: 100px;
+    margin: $margin-container;
+   
+    border: $base-border;
+    border-radius: $base-border-radius;
+    @include flebox(flex, column, space-around, center);
+   
+    padding: 1rem;
+    & .main-form__user-input{
+        width: 90%;
+        margin: 1rem 0;
+        font-size: $base-font-size;
+        padding: 5px 5px;
+        border-radius: $base-border-radius;
+        &:focus{
+            border: 2px solid blue;
+        }
+    }
+    & .add-btn{
+        font-size:$base-font-size;
+        outline: none;
+        background-color: $bg-btn;
+        color:$base-color-txt;
+        padding: 7px;
+        border-radius: $base-border-radius;
+        cursor: pointer;
+        border: $base-border;
+        &:hover{
+            background-color:lighten($color:  $bg-btn, $amount: 20);
+            transition: $base-transition;
+        }
+    }
+}

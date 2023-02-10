@@ -1,0 +1,92 @@
+@import './partials/variables';
+@import './partials/boucles';
+
+* {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+
+    // border: white solid 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1c2532;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 100px;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+
+    border: white solid 1px;
+}
+
+#text {
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+}
+
+#submit {
+    background-color: #117856;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section {
+
+    background: linear-gradient(90deg, rgb(111, 129, 155) 0%, rgb(75, 88, 108) 100%);
+    width: 442px;
+    height: 300px;
+    // border-radius: 10px;
+
+    border: white solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+    // scrollbar-color: rgb(0, 0, 0) grgb(0, 0, 0)
+    scrollbar-width: thin;
+    // scrollbar-shadow-color: #1c2532;
+
+}
+
+ul {
+    // background-color: black;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    background-color: #23252b;
+    height: 50px;
+    margin: 10px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon {
+    color: white;
+    font-size: 30px;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="top"></div>
+        <h1>Les balises HTML</h1>
+
+        <h2>Les titres (headings)</h2>
+
+        <p>Les balises h1 à h6 représentent les niveaux de titre d'un document HTML, h1 étant unique sur une même page et le plus impotant. Les différents niveaux suivants (h2 à h6) servent à hiérarchiser et structurer l'information au sein de la page.</p>
+
+        <h1>Titre de niveau 1 - 1 seul par page</h1>
+        <h2>Titre de niveau 2 - peut être utilisé plusieurs fois sur une même page. Idem pour tous les titres inférieurs.</h2>
+        <h3>Titre de niveau 3</h3>
+        <h4>Titre de niveau 4</h4>
+        <h5>Titre de niveau 5</h5>
+        <h6>Titre de niveau 6</h6>
+
+
+        <h2>Paragraphe et mise en forme</h2>
+        <p>La balise "p" permet de créer un paragraphe.</p>
+
+        <p>Certaines balises permettent de mettre en évidence une partie de texte et d'en modifier la mise en forme. <strong>"strong" = marquer l'importance d'un texte.</strong> <b>"b" = bold = afficher du texte en gras. Mais "b" est obsolète. </b> <s>"s" = strike = marquer le caractère obsolète de quelque chose.</s> </p>
+
+        <p> <em>"em" = <em>emphase</em> =  autre manière de mettre en évidence du texte.</em> <i>"i" = exprimer un terme technique, du texte en langue étrangère ou encore un pensée.</i> </p>
+
+        <p> "br" = Permet un saut de ligne.
+            J'ai sauté une ligne dans mon éditeur mais je ne vois pas de saut de ligne sur la page web. <br> Grace au "br", j'ai sauté une ligne sur ma page. Attention, "br" ne doit pas être utilisé par espacer des élements entre eux. Généralement, il sert de retour à la ligne au sein d'un même élément. "br" est une balise auto-fermante, c'est à dire quelle n'a pas besoin d'être refermée car elle n'a pas vocation à intégrer du contenu. Son rôle se limite à un saut de ligne.</p>
+
+        <p> <u> "u" = underline = permet de souligner du texte.</u> </p>
+
+        <h2 id="lists">Les listes</h2>
+        <!-- Il existe 2 types de listes : les listes désordonnées (ul) et les listes ordonnées (ol). -->
+
+        <h3>Liste désordonnée</h3>
+        <ul> <!-- ul = unordered list -->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <h3>Liste ordonnée</h3>
+        <!-- Lien personnalisation d'une liste ol : https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol -->
+
+        <ol> <!-- ol = ordered list -->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+
+        <h3>Liste imbriquée</h3>
+        <!-- Créer une liste imbriquée d'animaux selon 3 catégories : herbivores, carnivores, omnivores. -->
+        
+        <!-- liste de Mayron -->
+        <ul>
+            <li>Herbivores
+                <ol>
+                    <li>Girafe</li>
+                    <li>Elephant</li>
+                    <li>Rhinocéros</li>
+                    <li>Hippopotame</li>
+                </ol>
+            </li>
+            
+            <li>Carnivores
+                <ol>
+                    <li>Lion</li>
+                    <li>Tigre</li>
+                    <li>Léopard</li>
+                    <li>Hyène</li>
+                </ol>
+            </li>
+            
+            <li>Omnivores
+                <ol>
+                    <li>Homme</li>
+                    <li>Cochon</li>
+                    <li>Ours</li>
+                    <li>Hérisson</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h2>Les types (catégories) d'éléments</h2>
+        <p>On recense 3 grandes catégories d'éléments en HTML :
+            <ol>
+                <li>block</li>
+                <li>inline</li>
+                <li>inline-block</li>
+            </ol>
+        </p>
+
+        <h3>Spécificités des éléments de type block</h3>
+        <ul>
+            <li>Par défaut, un élément de type block occupe toute la largeur de son conteneur (parent).</li>
+            <li>Par défaut, un élément de type block s'adapte en hauteur à son contenu.</li>
+            <li>par défaut,mles éléments de type block s'alignent les uns en-dessous des autres.</li>
+            <li>Les dimensions d'un élément de type block peuvent être redéfinies.</li>
+        </ul>
+
+
+        <div style="background-color: red; color:white;">div ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+        <div style="background-color: blue; height: 50px; color:white;">div</div>
+        <div style="width: 400px">
+            <div style="background-color: green; color:white;">div</div>
+        </div>
+        <div style="width: 400px">
+            <div style="background-color: pink;">div</div>
+            <div style="background-color: pink; width: 200px">div</div>
+        </div>
+
+        <div>
+            <h4>Exemples d'éléments de type block</h4>
+            <ul>
+                <li>La div (division) est l'élément générique (par défaut) de type block. Il n'a pas de valeur sémantique et son rôle se limite donc à son comportement.</li>
+                <li>body</li>
+                <li>Titres : h1 à h6</li>
+                <li>section</li>
+                <li>acticle</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>nav</li>
+                <li>main</li>
+            </ul>
+        </div>
+
+        <h3>Spécificités des éléments de type inline</h3>
+        <ul>
+            <li>Largeur : largeur du contenu</li>
+            <li>Hauteur : hauteur du contenu</li>
+            <li>Alignement: les uns à côté des autres</li>
+            <li>Les dimensions d'un élément de type inline ne peuvent pas être redéfinies.</li>
+        </ul>
+
+        <span style="background-color: red; color:white; height: 50px; width: 400px;">span</span>
+        <span>span</span>
+        <span>span</span>
+
+        <div>
+            <h4>Exemples d'éléments de type inline</h4>
+            <ul>
+                <strong>strong</strong>
+                <em>em</em>
+                <dfn>definition</dfn>
+            </ul>
+        </div>
+
+        <h2>Spécificités des éléments de type inline-block</h2>
+        <ul>
+            <li>Hauteur par défaut : hauteur du contenu</li>
+            <li>Largeur par défaut : largeur du contenu</li>
+            <li>Alignement : les uns à la suite des autres</li>
+            <li>Redimensionnement : possible</li>
+        </ul>
+
+        <button>Bouton</button>
+        <button style="background-color: red; color:white; height: 50px; width: 400px;">Bouton</button>
+
+        <h2>Autres éléments utiles </h2>
+
+        <h3>hr</h3>
+        <p>L'élément "hr" marque une rupture thématique. Il représente un changement de thème entre des éléments de paragraphe, comme par exemple u n changement de décor dans un récit. <hr>Ici, je reste dans mon paragrphe mais j'aborde quelque chose de nouveau.
+        </p>
+
+        <h3>Le lien a</h3>
+        <!-- L'élément a (anchor ou ancre) permet de créer un lien entre 2 pages web ou entre 2 endroits différents au sein d'une même page. -->
+        <!-- Le lien a comprend un attribut "href" qui permet de spécifier l'adresse à laquelle on souhaite faire la redirection. NB: Un attribut se place toujours dans la balise ouvrante de l'élément. -->
+
+        <p>Lien vers <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Wikipedia</a></p>
+
+
+        <!-- L'attribut "target" permet de modifier la façon dont la redirection se fait en définissant comment la page de destination doit s'ouvrir (sur la même fenêtre ou sur une autre fenêtre)  -->
+
+        <p>Lien vers la documentation officielle de <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">html</a></p>
+
+
+        <!-- Pour effectuer une redirection sur une autre zone de la page, il faut être en mesure de "pointer" vers cette zone. Ainsi, il faut placer un identifier sur l'emplacement à atteindre à l'aide d'un attribut "id" et renseigner la valeur de cet identifant dans le "href" du lien de redirection précédé du caractère "#". -->
+
+        <!-- Attention: Un id doit être unique. Il est interdit d'attribuer à 2 élements d'une même page un id qui aurait la même valeur. -->
+
+        <!-- Le lien suivant ne fait que rafraîchir la page -->
+        <a href="">Retour vers le haut de la page</a>
+        <br> <!-- Rappel : BR ne doit pas servir à espacer les éléments entre eux -->
+        <!-- Le lien ci-dessous redirige vers l'élément ayant un id dont la valeur est "top" -->
+        <a href="#top">Retour vers le haut de la page</a>
+        <br>
+        <a href="#lists">Redirection vers les listes</a>
+        
+        <!-- NB: Le lien "a" est notamment utilisé pour insérer des redirections au sein d'un menu de navigation. -->
+
+        <h3>L'élément "cite"</h3>
+        <!-- "cite" contient du texte relatif à une oeuvre (série, film, chanson, citation ...). -->
+        <p>Exemple : Pour critiquer les gens il faut les connaître, et pour les connaître, il faut les aimer. <cite>Coluche</cite></p>
+
+        <h3>Les éléments "details" et "summary"</h3>
+        <!-- "details" est un élément de divulgation de détails. Il comprend un élément "summary" qui s'affiche instantanément sur la page. En revanche, le reste est masqué est peut être divulgué en cliquant sur la flèche placé avant le texte du "summary". -->
+        <details>
+            <summary>Ceci est le résumé de mon texte.</summary>
+            <p>Mais, celui-ci est beaucoup plus long qu'il n'y paraît.</p>
+        </details>
+
+        <!-- Exercice : 
+        Créer une page exo.html
+        Ajouter le texte "Redirection interne" au sein d'un titre h1
+        Ajouter 3 titres h2, chacun séparés pas 1 paragraphe de plusieurs lignes.
+        Attribuer une hauteur de 500px à chaque paragraphe.
+        Dans chaque paragraphe, faire en sorte d'afficher une partie du texte en gras et une partie en italique
+        Ajouter une liste sous le h1 et autant d'items que de h2. Chaque item devra, au clic, rediriger l'utilisateur vers le titre h2 concerné. -->
+
+    </body>
+</html>

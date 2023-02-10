@@ -1,0 +1,33 @@
+.list-items{
+    width: $width-container;
+    height: 250px;
+    border: $base-border;
+    margin: $margin-container;
+    background: linear-gradient(135deg, #5c6c82, #3f4d60);
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
+    & .item{
+        @include flebox(flex, row, space-between, center);
+        background-color: #23252b;
+        margin:1rem 1rem;
+        padding :5px 5px;
+        & p{
+            color: $base-color-txt;
+            padding: 0 1rem;
+            border-radius: 5px;
+            font-size: $base-font-size;
+        }
+        & #delete{
+            color:red;
+            margin: 0 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover{
+                color: $base-color-txt;
+                transition: $base-transition;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+    }
+}

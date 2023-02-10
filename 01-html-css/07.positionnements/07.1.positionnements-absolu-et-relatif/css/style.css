@@ -1,0 +1,72 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/******************************************/
+/* La position absolue */
+/******************************************/
+
+/* La position absolue place l'élément par rapport à la fenêtre du navigateur. Ainsi, tous les autres éléments de la fenêtre son ignorés. On dit que la position absolue fait sortir l'élément du flux (empilement par défaut des éléments sur une page web) */
+.pos-absolue {
+    background-color: red;
+    /* color: #fff; */
+    /* color: hsl(360, 100%, 100%); */
+    color: rgb(255,255,255);
+    padding: 10px;
+    position: absolute;
+    /*top: 0;*/ /* L'élément se place tout en haut de la fenêtre en faisant abstraction de tous les éléments du document qui pourraient exister avant lui dans le flux.*/
+    /*top: 50%;*/ /* L'élément se place à 50% de la hauteur de la fenêtre */
+    /*bottom: 0;*/ /* L'élément se place tout en bas de la fenêtre */
+    /* bottom: 200px;*/ /* L'élément marque un écart de 200px par rapport au bord inférieur de la fenêtre */
+    /*left: 100px;*//* L'élément marque un écart de 100px par rapport au bord gauche de la fenêtre */
+
+    /* Placer le bloc en bas à droite de la fenêtre */
+    right: 0;
+    bottom: 0;
+
+}
+
+/******************************************/
+/* La position relative */
+/******************************************/
+.bloc {
+    background-color: #000;
+    height: 200px;
+    width: 200px;
+}
+
+.pos-relative {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    position: relative; /* Un élément en position relative reste dans le flux. Par contre, devient son propre référentiel. On pourra ainsi le déplacer par rapport à sa position d'origine dans le flux. */
+    top: -50px;
+    left: 50px;
+}
+
+/*************************************************/
+/* La position relative et position absolue */
+/*************************************************/
+/* Lorsqu'un élément est placé en position absolue, son référentiel est la fenêtre. En revanche, s'il a un ou des parents placés en position relative, son plus proche parent en position relatif devient alors son nouveau référentiel. */
+.container {
+    height: 300px;
+    width: 500px;
+    background-color: pink;
+    position: relative;
+}
+
+.container2 {
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    position: relative;
+}
+
+.pos-absolue2 {
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+}
+

@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p, div {
+    margin: 20px;
+}
+
+#but1 {
+    background-color: rgb(red, green, blue);
+}

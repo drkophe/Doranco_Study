@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 2022 : Version actuelle de HTML = HTML 5 (depusi 2014) -->
+
+<!-- Raccourcis création éléments essentiels d'une page : "!" + entrer -->
+
+
+<html lang="fr"> <!-- Définir la langue dans laquelle le document est rédigé. -->
+
+<!-- Le head représente l'en-tête du document. Il contient des informations, qui ne sont pas forcément retranscrites sur la page et font parfois des liens avec d'autres documents. -->
+<head>
+    <!-- Identation : Le fait de déclarer la ligne de code vers la droite pour spécifique que des éléments sont imbriqués au sein d'un autre. -->
+    
+    <!-- meta = métadonnées/metadata = baliseq qui servent à tranmettre des données via l'en-tête. -->
+
+    <!-- Raccourci commentaires : 
+        1. alt + maj + A
+        2. C+entrer
+        3. ctrl+":"
+    -->
+    <meta charset="UTF-8"> <!-- Déclarer l'encodage. Assure la lecture des caractères spéciaux -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Standard de compatibilité avec Internet Explorer et Edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assurer le responsive design -->
+    <title>Titre de la page</title> 
+    <meta name="author" content="Votre nom"> <!-- Auteur de la page -->
+    <meta name="description" content="Description de la page"> <!-- Commentaire de la page qui apparaît dans les résultats de recherche. -->
+</head>
+<body> <!-- corps du document : tout ce qui est inclus dans la balise body peut s'afficher sur la page. -->
+<!-- Syntaxe pour commenter  -->
+<!-- 
+    NB : Pour inscrire du contenu texte à destination de l'utilisateur, celui dit doit généralement être intégré au sein de balises qui ont cette vocation telles que "p", "h1-h6", "span", "cite"... Rédiger du contenu texte directement au sein d'éléments contenueur tels que le header, la nav, le main, la div ... est une mauvaise pratique.
+    Ici, nous contournons cette règle car il s'agit d'un cours en HTML -->
+
+    <header style="background-color: red; height: 100px;">header
+        <!-- - zone de haut de page, ex : bannière, logo, slogan, nom de marque .. -->
+        <!-- sémantique (sens) : Il regroupe du contenu introductif. -->
+    </header>
+    <nav>nav
+        <!-- - Contient des éléments permettant de naviguer de page en page ou d'un zone à l'autre au sein d'une même page. Permet de créer un menu de navigation. Elle intègre des liens de navigation. 
+        Sémantique : Permettre de navigueur sur le site -->
+    </nav>
+    <main style="background-color: orange; height: 500px;">
+        main 
+        <!-- Contenu principal de la page. Celui-ci doit être unique et forcément visible sur la page. -->
+        <section>section
+            <!-- - Regroupement de contenu par thème. -->
+        </section>
+        <article>article
+            <!-- - Regroupement de contenu autonome et exportable facilement d'une plateforme à une autre. -->
+        </article>
+    </main>
+    <aside>aside (aparté)
+        <!-- - Zone délimitée de contenu secondaire qui n'aura pas de rapport direct avec le contenu principal. -->
+    </aside>
+    <footer style="background-color: red; height: 100px;">footer 
+        <!-- - Pied de page
+        - Contient des informations tels que des liens adminsitratifs, mentions légales, plan du sites... -->
+    </footer>
+
+
+    <h2>Autres éléments à valeur sémantique</h2>
+    em : texte en emphase
+    strong : texte important
+    <mark>mark : texte pertinent selon le contexte</mark> 
+    <cite>Citation</cite>
+    <dfn>Définition</dfn>
+
+    <h2>Elements sans valeur sémantique</h2>
+    <div>Div = division</div>
+    <span>span</span>
+
+</body>
+</html>
