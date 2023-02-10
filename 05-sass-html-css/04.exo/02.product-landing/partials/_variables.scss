@@ -1,0 +1,17 @@
+// $yellow : #f1c40f;
+// $iconColor : #ff8c00;
+// $bgColor : #eeeeee;
+// $bgColorDark : #dddddd;
+
+$bgColor : #F9F5E7 ;
+$beige : #F8EAD8 ;
+$beigeDark : #EDDBC7 ;
+$peach: #A7727D ;
+
+@mixin flex ($justify, $direction, $align){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+};
+

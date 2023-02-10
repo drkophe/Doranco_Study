@@ -1,0 +1,22 @@
+/* body {
+    background-color: blue;
+} */
+
+/* Commentaire en css */
+
+/*
+Etape 1 : Les 3 paragraphes sont mis en forme grâce à l'élément "style" dans le head du document HTML
+Etape 2 : Le premier paragraphe est de nouveau mis en forme grâce à son attribut "style". Ici, l'attribut style écrase l'élément style du head.
+Etape 3 : Les paragraphe 2 et 3 sont de nouveau mis en forme grâce à la feuille de style "style.css".
+
+Conclusion : 
+1. L'ordre de rédaction du code joue un rôle dans la mise en forme des éléments. Le code le plus récent écrase le précédent.
+
+2. Les style se complètent tant qu'il n'y a pas de conflit. Ex de conflit: J'applique une couleur de fond rouge au body via l'élément style, puis une couleur bleu via la feuille de style. La couleur bleue écrase la couleur rouge.
+
+3. Plus on cible précisément un élément, plus la mise en forme associée est prioritaire (cf. cours suivant).
+
+*/
+
+
+

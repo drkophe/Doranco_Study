@@ -1,0 +1,15 @@
+// --------- 1ere façon pour importer ---------
+// @import './partials/variables', './partials/cards'; //chemin relative du fichier sans le _ et sans l'extension
+
+// --------- 2eme façon pour importer ---------
+
+@import './partials/variables'; // importer d'abord les variable ^pour utiliser les boucle de button
+@import './partials/cards'; //chemin relative du fichier sans le _ et sans l'extension
+
+@import './partials/button';
+
+
+h1{
+    color: $error;
+    font-size: $font-size-xxl;
+}

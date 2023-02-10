@@ -1,0 +1,109 @@
+/************************************************/
+/* Les propriétés de mise en forme de texte */
+/************************************************/
+
+.color {
+    color: red;
+}
+
+.font-size {
+    font-size: 30px;
+}
+
+/* div {
+    font-weight: 900;
+} */
+
+.font-weight {
+    font-size: 30px;
+    /* font-weight: bold; */
+    /* font-weight: bolder; */
+    font-weight: lighter;
+    /* font-weight: 100; le plus fin */
+    /* font-weight: 900; le plus gras */
+    /* font-weight: 400; normal */
+    /* font-weight: 700; bold */
+}
+
+.text-transform {
+    text-transform: uppercase; /* tout passe en majuscule */
+    text-transform: lowercase; /* tout passe en minuscule */
+    text-transform: capitalize; /* Chaque première lettre de chaque mot passe en majuscule */
+}
+
+.text-align {
+    text-align: left; /* valeur par défaut */
+    text-align: right; /* alignement à droite */
+    text-align: center; /* alignement au centre */
+}
+
+/************************************************/
+/* Les propriétés de mise en forme de blocs */
+/************************************************/
+
+/* Les dimensions d'un élément de bloc peuvent être définies à l'aide de plusieurs unités de mesure :
+    1. Le pixel (px) : unité de longueur qui correspond à la largeur ou à la hauteur d'un point unique qui peut être vu confortablement par l'oeil humain sans effort mais par ailleurs aussi petit que possible (source : cf.https://developer.mozilla.org/fr/docs/Glossary/CSS_pixel).
+    2. Le pourcentage (%) : unité relative à l'élément parent.
+    3. Le viewport (vh / vw) : ratio relatif aux dimensions de la fenêtre du navigateur. vh = viewport height; vw = viewport width */
+
+.maZone {
+    height: 200px; /* Gérer la hauteur */
+    width: 200px; /* Gérer la largeur */
+    background-color: cyan;
+    border: 1px solid; /* Définir la mise en forme de la bordure*/
+}
+
+.container {
+    height: 200px; 
+    width: 200px; 
+    background-color: black;
+}
+
+.maZone2 {
+    /* height: 100px; 
+    width: 100px;  */
+    height: 50%; 
+    width: 50%; 
+    background-color: orange;
+    border: 1px solid;
+}
+
+.container2 {
+    /* height: 200px; 
+    width: 200px;  */
+    height: 50vh; 
+    width: 50vw;
+    background-color: brown;
+}
+
+div {
+    font-size: 16px;
+}
+
+div p {
+    font-size: 2em; /* 32px car 16px fois 2 */
+}
+
+
+/* documentation propriété "margin" : https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+.box-model {
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid red;
+    background-color: green;
+    margin: 0 auto; /* Je centre l'élément dans son conteneur. haut et bas = 0; droite et gauche = auto */
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* Je sélectionne les div qui ont la classe "arrondie" */
+div.arrondie {
+    height: 100px;
+    width: 100px;
+    border: 3px solid;
+    /* border-radius: 10px; */
+    border-radius: 20px 0;
+    border-radius: 20px 10px 30px 10px; /* applique un arrondi différent à chaque angle à partir de l'angle en haut à gauche */
+}

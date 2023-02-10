@@ -1,0 +1,41 @@
+// @each $cle, $val in $colors{
+//     .text-#{$cle}{
+//         color: $val;
+//         }
+//     .bg-#{$cle}{
+//         color: $val;
+//     }
+// }
+
+// @for $i from 1 through 3 {
+//     .c-#{$i}{
+//         color: grey;
+//     }
+// }
+
+@each $cle, $val in $colors{
+    .btn-#{$cle}{
+        color: $val;
+    }
+    .btn-#{$cle}-outlined{
+        color: $val;
+    }
+    
+    .txt-#{$cle}{
+        color: $val;
+        &:hover{
+            color: black;
+        }
+    }
+    @for $i from 1 through 5 {
+        .text-#{$cle}-light-#{$i}{
+            color: lighten($color: $val, $amount: $i * 10);
+        }
+    }
+    @for $i from 1 through 5 {
+        .text-#{$cle}-light-#{$i}{
+            color: darken($color: $val, $amount: $i * 10);
+        }
+    }
+}
+

@@ -1,0 +1,69 @@
+div {
+    font-size: $font-size;
+    a {
+        background-color: $lightBlue;
+        border: 3px solid $darkBlue;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 6px 20px 6px 20px;
+        text-decoration: none;
+        color: $darkBlue;
+    }
+}
+
+
+// PROF
+
+// // Boucles (loops)
+
+// // 1 : boucle @each
+
+// // @each $cle, $val in $colors {
+// //     .btn-#{$cle} {
+// //         color: white;
+// //         background-color: $val;
+// //         border: none;
+// //         &:hover{
+// //             background-color: lighten($color: $val, $amount: 10);
+// //         }
+// //     }
+// //     .btn-#{$cle}-outlined{
+// //         border: 1px solid $val;
+// //         background-color: white;
+// //         color: $val;
+// //         &:hover{
+// //             background-color: $val;
+// //             color:white;
+// //             transition: all ease 0.3s;
+// //         }
+// //     }
+// // }
+// // .btn {
+// //     text-decoration: none;
+// //     cursor: pointer;
+// //     display: inline-block;
+// //     padding: $base-padding $base-padding * 2;
+// //     border-radius: $base-border-radius / 4;
+// //     margin: $base-margin;
+// // }
+
+
+// // ===================================
+// // déclaration d'un mixin
+// @mixin btn(){
+//     text-decoration: none;
+//     cursor: pointer;
+//     display: inline-block;
+//     padding: $base-padding $base-padding * 2;
+//     border-radius: $base-border-radius / 4;
+//     margin: $base-margin;
+// }
+
+// // inclusion du mixin
+// .btn-primary {
+
+//     @include btn();
+//     background-color: $primary;
+//     color: white;
+//     border: none;
+// }

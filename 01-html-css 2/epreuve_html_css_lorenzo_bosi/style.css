@@ -1,0 +1,246 @@
+/***********************   GENERAL   ***********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+a:hover {
+    color: #f2b427;
+}
+
+h3 {
+    color: #f2b427;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+/***********************   HEADER   ***********************************/
+
+header>div:first-child {
+    background-color: black;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-titre {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #f2b427;
+    margin: 0 0 0 15px;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+
+/***************/
+
+header>div:last-child {
+    background-image: url(img/bandeau-burger-1.jpg);
+    height: 200px;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slogan {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+}
+
+/***********************   MAIN   ***********************************/
+
+main {
+    background-image: url("img/burger-bg.png") ;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.menu1, .menu2 {
+    display: flex;
+
+}
+
+img[alt="sticker new"] {
+    position: relative;
+    bottom: 120%;
+    right: 10%;
+}
+
+/****************/
+
+figure>img:first-child {
+    border: 3px black solid;
+    border-radius: 10px 10px 0px 0px;
+}
+
+figure {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0;
+    height: 240px;
+    width: 300px;
+    margin: 30px 30px 0px 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+figcaption {
+    text-align: center;
+    background-color: black;
+    color: #f2b427;
+    font-style: italic;
+    padding: 3px;
+    height: 30px;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+/****************/
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    bottom: 50%;
+}
+
+.surplace, .a-emporter {
+    color: #f2b427;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: 1px solid #f2b427;
+    border-radius: 5px;
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/***********************   FOOTER   ***********************************/
+
+footer {
+    background-color: black;
+    color: white;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li>a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/**************/
+
+.city {
+    background-color: #272322;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 20px;
+    font-size: 13px;
+}
+
+.city>ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.city>ul>li:nth-child(2), .city>ul>li:nth-child(4), .city>ul>li:nth-child(6) {
+    background-color: #fab82c;
+    height: 17px;
+    width: 17px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+/*************/
+
+footer>div:nth-child(2) {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.5px solid #f2b427;
+    
+}
+
+footer>div:nth-child(2)>div {
+    width: 200px;
+    font-size: 15px;
+    margin: 20px;
+    
+}
+
+ul,p {
+    list-style: none;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+footer>div:last-child {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant BootStrap</title> 
+    <meta name="author" content="Lorenzo">
+    <meta name="description" content="Description de la page"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(img/nick-karvounis-Ciqxn7FE4vE-unsplash\ \(2\).jpg); background-position: initial; background-repeat: no-repeat; background-size: auto;"> 
+    <!-- background-color: #edede9; -->
+
+
+    <div style="font-family: 'Playfair Display';" class="container p-4 mt-3 height-30">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary m-4 rounded-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/OK2WEZ2.png" alt="" width="150"></a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="boisson.html">Nos Boissons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="alert alert-success text-center" role="alert" style="display: none;">
+            Votre requête a bien été envoyée !
+          </div>
+        
+
+          <div class="row justify-content-center">
+            <form class="border border-light p-4 text-light rounded-3 m-4 col-9" style="background-color: rgb(0, 0, 0, 60%);">
+
+              <h2 class="text-center bg-light text-dark p-3 col-5 rounded-3 fw-bold mx-auto">Nous Contacter</h2>
+ 
+              <div class="row justify-content-around mt-5 text-center fw-bold">
+                <div class="mb-3 col-5">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control nom" id="nom" aria-describedby="Nom">
+                </div>
+                <div class="mb-3 col-5">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control prenom" id="exampleInputPassword1">
+                </div>
+              </div>
+
+              <div class="row justify-content-around mt-5 mb-5 text-center fw-bold">
+                <div class="mb-3 col-5">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control email" id="email">
+                </div>
+  
+                <div class="mb-3 col-5">
+                  <label for="telephone" class="form-label">N° Téléphone</label>
+                  <input type="number" class="form-control tel" id="telephone">
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="row justify-content-center">
+                  <div class="mb-3">
+                    <textarea class="form-control message" id="exampleFormControlTextarea1" rows="3" placeholder="Message ..."></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-light fw-bold ms-3" id="submit">Submit</button>
+
+              </div>
+
+
+            </form>
+          </div>
+
+
+      
+
+
+
+
+          
+        <footer class="row justify-content-center bg-dark rounded-4 p-3 m-5" style="width: 90%; margin: 0 auto; position:fixed; bottom: 0;">
+            <div class="col-4 text-center pt-2"><img src="img/OK2WEZ1.png" alt="" width="100"></div>
+
+            <div class="col-4 text-center a-dark">
+                <a href="#" class="text-light text-decoration-none">Liens utiles</a><br>
+                <a href="contact.html" class="text-light text-decoration-none">Nous contacter</a><br>
+                <a href="#" class="text-light text-decoration-none">En savoir +</a>
+            </div>
+
+            <div class="col-4 text-center text-light">
+                <p>Réseaux :</p>
+                <i class="bi bi-facebook m-1" style="color: white;"></i>
+                <i class="bi bi-instagram m-1"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

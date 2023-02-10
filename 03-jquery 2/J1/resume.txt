@@ -1,0 +1,95 @@
+// ------------------------- QU'EST-CE QUE JQUERY ------------------------
+// JQuery c'est une librairie JavaScript qui permet de manipuler les éléments du DOM 
+// qui permet de créer des animations 
+// et qui simplifie la syntaxe de JS 
+
+//------------------- COMMENT RELIER JQUERY ---------------------------
+// On relie JQuery avec le lien d'un CDN (un CDN permet d'héberger le code de JQuery en ligne)
+// CDN : Content Diffusion Nerwork (ou réseau de diffusion de contenu)
+// le lien du CDN Jquery : https://code.jquery.com/jquery-3.4.1.min.js
+
+//------------------------ LES SELCTEURS ------------------------------
+// On a soit le nom de la balise 
+// soit la classe de la balise 
+// ou l'ID de la balise 
+
+// ------------------------- EXEMPLE 
+$('element'); // element = nom de la balise 
+$('.classElement'); // .classElement = classe de la balise
+// on utilise le . pour signaler que c'est une balise 
+$('#idElement'); // idElement= l'identifiant de l'élément 
+// on utilise le # pour signaler que c'est un ID 
+
+// --------------------------- EVENTS ----------------------------------
+// Pour surveiller un évènement, on a besoin d'un eventListener 
+// il existe deux syntaxes : 
+
+element.on('nomDeLevent', function(){
+    // les instructions à exécuter si l'évènement se produit 
+});
+
+element.nomDeLevent(function(){
+    // les instructions à exécuter si l'évènement se produit
+    // ça peut être n'importe quelle isntruction JS
+});
+
+// On a vu click :
+element.on('click', function(){
+    // les instructions à exécuter quand l'utilisateur clique 
+})
+// la syntaxe équivalente c'est:
+element.click(function(){
+    // les instructions à exécuter quand l'utilisateur clique
+})
+
+// on a vu mouseOver :
+element.on('mouseover', function(){
+    // les instructions à exécuter quand l'utilisateur 
+    // passe sa souris sur l'élément 
+})
+// la syntaxe équivalente 
+element.mouseover(function(){
+    // les instructions à exécuter quand l'utilisateur 
+    // passe sa souris sur l'élément
+})
+
+// eventTarget :
+// le concept d'eventTarget c'est l'objet qui se créé 
+// quand on déclenche l'évènement 
+// il va rescencer des informations sur l'évènement 
+// comme : la date, l'emplacement sur l'écran, l'élément qu'il l'a déclenché, etc
+// et on peut y accéder en le passant comme paramètre à la fonction 
+// de l'eventListener 
+
+element.on('nomdelevent', function(eventTarget){
+    // avec la variable eventTarget on peut accéder
+    // à des informations sur l'event
+});
+
+// ------------------- MANIPULATION D'ATTRIBUT -----------------
+// text():
+// qui permet de récupérer le contenu textuel 
+// et qui peut permettre de modifier le contenu textuel 
+// pour cela, il suffit de lui passer une chaine de caractères en paramètre. 
+
+element.text() // pour récupérer seulement le contenu 
+element.text("un contenu ici"); // pour modifier le contenu
+
+// css():
+// on peut modifier les attributs css de l'élément 
+// css() prend deux paramètres sous forme de string 
+// le premier c'est l'attribut qu'on veut modifier 
+// le second c'est la valeur qu'on veut modifier 
+
+element.css('attribut', 'valeur');
+
+// html()
+// permet de récupérer le contenu HTML qu'il y a dans un élément 
+// c'est l'équivalent de innerHTML 
+// on peut modifier l'HTML en lui passant un paramètre 
+// sous forme de string 
+// qui sera le nouveau contenu HTML 
+
+element.html('<p>nouvel element exemple</p>');
+
+

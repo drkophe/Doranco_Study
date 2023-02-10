@@ -1,0 +1,16 @@
+button, #submit {
+    background-color: $peach;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 20px ;
+    // border-color: darken($color: $peach, $amount: 20%);
+    // outline: none;
+    border: none;
+    &:hover {
+        border-color: $peach;
+        background-color: lighten($color: $peach, $amount: 10%);
+        transition: all ease-in 0.3s;
+        cursor: pointer;
+    }
+}

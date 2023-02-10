@@ -1,0 +1,57 @@
+// ------------------------------------------------------ THIS : 
+// this c'est un concept qui permet de localiser l'élément qui a déclenché une action 
+// on utilise this pour éviter de répéter le même traitement plusieurs fois 
+// ça permet d'appliquer le même traitement sur plusieurs éléments en les sélectionnant de manière groupée 
+// on est pas obligés de passer par leurs identifiants et d'appliquer le traitement sur chaque élément individuellement
+
+// la syntaxe pour this c'est :
+$(this) // on le met pas entre guillemets
+
+// on peut appliquer n'importe quelle méthode de JQuery sur this.
+
+// pour la génération aléatoire, on a vu : 
+// math.random()
+// Math.random() retourne un nombre (décimal) entre 0 et 1.
+// on l'utilise pour générer soit des indices ou des nombres aléatoires etc.
+
+//---------------------------------------------------- Naviguer dans le DOM : 
+
+// parent():
+// parent() permet de récupérer le parent de l'élément sélectionné 
+// Syntaxe : 
+$("element").parent()
+
+// children():
+// children() permet de récupérer les enfants de l'élément sélectionné 
+// Syntaxe :
+$("element").children()
+
+// next();
+// next() permet de récupérer le frère immédiat de l'élément sélectionné 
+// Syntaxe :
+$("element").next()
+
+// prev():
+// prev() permet de récupérer le frère qui est immédiatement avant l'élément sélectionné 
+// Syntaxe : 
+$('element').prev()
+
+// append():
+// append() permet de rajouter des enfants à la suite du dernier enfant de l'élément sélectionné 
+$('element').append()
+
+// ----------------------------------------------- toggleClass():
+
+// toggleClass() permet d'ajouter/supprimer les classes en alternance
+// Si l'élément a déjà la classe, il va lui supprimer 
+// Si l'élément n'a pas déjà la classe, il va lui ajouter 
+
+// ---------------------------------------------- Effets :
+
+// Les effets c'est une des forces de JQuery 
+// Y a plusieurs types d'effets, notamme : 
+
+// Les fades qui permettent de diminuer/augmenter l'opacité 
+// les slides qui permettent d'afficher/faire disparaitre en slide 
+// Les basiques qui permettent simplement d'afficher/faire disparaitre
+

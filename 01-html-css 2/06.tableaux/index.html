@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux</title> 
+    <meta name="author" content="Votre nom">
+    <meta name="description" content="Description de la page"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+
+    <h1>Les tableaux</h1>
+
+    <!-- table = crée un tableau -->
+    <table>
+        <!-- thead = en-tête pour les colonnes du tableau -->
+        <thead>
+            <!-- tr = table row = 1 ligne du tableau -->
+            <tr>
+                <!-- th = table head = en-tête d'une colonne -->
+                <th>Titre - colonne 1</th>
+                <th>Titre - colonne 2</th>
+                <th>Titre - colonne 3</th>
+            </tr>
+        </thead>
+        <!-- tbody = corps du tableau -->
+        <tbody>
+            <tr>
+                <!-- td = table data = 1 donnée du tableau -->
+               <td>ligne 1 - donnée 1</td> 
+               <td>ligne 1 - donnée 2</td> 
+               <td>ligne 1 - donnée 3</td> 
+            </tr>
+            <tr>
+                <!-- td = table data = 1 donnée du tableau -->
+               <td>ligne 2 - donnée 1</td> 
+               <td>ligne 2 - donnée 2</td> 
+               <td>ligne 2 - donnée 3</td> 
+            </tr>
+            <tr>
+                <!-- td = table data = 1 donnée du tableau -->
+               <td>ligne 3 - donnée 1</td> 
+               <td>ligne 3 - donnée 2</td> 
+               <td>ligne 3 - donnée 3</td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <!-- colspan permet d'étendre la valeur sur plusieurs colonnes -->
+            <th scope="col" colspan="2">Sports</th> 
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Mr</td>
+                <td>Myron</td>
+                <td>Foot</td>
+            </tr>
+            <tr>
+                <!-- rowspan permet d'étendre la valeur sur plusieurs lignes -->
+                <td scope="row" rowspan="2">Ya</td>
+                <td>Yann</td>
+                <td>Basket</td>
+                <td>Taekwendo</td>
+            </tr>
+            <tr>
+                <!-- <td>Ya</td> -->
+                <td scope="row">Bienvenu</td>
+                <td>Karaté</td>
+                <td>Self-defense</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Fruits</th>
+                <td>Banane</td>
+                <td>Fraise</td>
+                <td>Poire</td>
+            </tr>
+            <tr>
+                <th>légumes</th>
+                <td>Choux</td>
+                <td>Salade</td>
+                <td>Poireau</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

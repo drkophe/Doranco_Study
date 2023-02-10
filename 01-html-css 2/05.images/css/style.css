@@ -1,0 +1,41 @@
+
+
+/* Je modifie la dimension de toutes mes images */
+/* img {
+    width: 50px;
+} */
+
+
+/* Sélection via l'attribut */
+/*  Je modifie les images qui ont l'attribut "alt" et la valeur "oiseau"*/
+img[alt="oiseau"] {
+    width: 400px;
+    border-radius: 10px 10px 0 0;
+}
+
+figure {
+    background-color: burlywood;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+figcaption {
+    text-align: center;
+}
+
+.fond {
+    height: 500px;
+    /* Insérer une image de fond */
+    background-image: url("../images/bird.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* cf. documentation officielle pour gérer l'affichage de l'image : https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+}
+
+.fond p {
+    color: white;
+    font-size: 50px;
+    Padding: 50px;
+}
