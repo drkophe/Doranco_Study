@@ -71,9 +71,6 @@ input, select, textarea {
 }
 
 /* Basic */
-@-ms-viewport {
-  width: device-width;
-}
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px;
@@ -91,7 +88,6 @@ body {
   background: #1b1f22;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-  -webkit-animation: none !important;
   animation: none !important;
   transition: none !important;
 }
@@ -162,7 +158,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
   border-bottom: solid 1px #ffffff;
   width: -moz-max-content;
-  width: -webkit-max-content;
   width: -ms-max-content;
   width: max-content;
   padding-bottom: 0.5rem;
@@ -417,7 +412,6 @@ input[type=radio] + label {
   text-decoration: none;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   cursor: pointer;
@@ -740,17 +734,17 @@ ul.actions.fit.stacked {
     padding-top: 0;
   }
   ul.actions:not(.fixed) li input[type=submit],
-ul.actions:not(.fixed) li input[type=reset],
-ul.actions:not(.fixed) li input[type=button],
-ul.actions:not(.fixed) li button,
-ul.actions:not(.fixed) li .button {
+  ul.actions:not(.fixed) li input[type=reset],
+  ul.actions:not(.fixed) li input[type=button],
+  ul.actions:not(.fixed) li button,
+  ul.actions:not(.fixed) li .button {
     width: 100%;
   }
   ul.actions:not(.fixed) li input[type=submit].icon:before,
-ul.actions:not(.fixed) li input[type=reset].icon:before,
-ul.actions:not(.fixed) li input[type=button].icon:before,
-ul.actions:not(.fixed) li button.icon:before,
-ul.actions:not(.fixed) li .button.icon:before {
+  ul.actions:not(.fixed) li input[type=reset].icon:before,
+  ul.actions:not(.fixed) li input[type=button].icon:before,
+  ul.actions:not(.fixed) li button.icon:before,
+  ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5em;
   }
 }
